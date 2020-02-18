@@ -103,7 +103,7 @@ function educulture_register_my_cpts_section() {
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => false,
-		"rewrite" => [ "slug" => "case-studies", "with_front" => true ],
+		"rewrite" => [ "slug" => "partners", "with_front" => true ],
 		"query_var" => true,
 		"menu_position" => 20,
 		"menu_icon" => "dashicons-format-image",
@@ -215,7 +215,7 @@ function educulture_register_my_cpts_section() {
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => true,
-		"rewrite" => [ "slug" => "study-abroads", "with_front" => true ],
+		"rewrite" => [ "slug" => "studyabroads", "with_front" => true ],
 		"query_var" => true,
 		"menu_position" => 20,
 		"menu_icon" => "dashicons-format-gallery",
@@ -223,7 +223,7 @@ function educulture_register_my_cpts_section() {
         "taxonomies"=>array('category'),
 	];
 
-	register_post_type( "study-abroads", $args );	
+	register_post_type( "studyabroads", $args );	
 	
 	
 	
@@ -319,7 +319,7 @@ function educulture_single_template($file){
 
 	global $post;
 	if("study-abroads"== $post->post_type){
-		$file_path= plugin_dir_path(__FILE__)."cpt-templates/single-study-abroads.php";
+		$file_path= plugin_dir_path(__FILE__)."cpt-templates/single-studyabroads.php";
 		$file=$file_path;
 	}
 	return $file;
