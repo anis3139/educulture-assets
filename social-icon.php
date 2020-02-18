@@ -1,6 +1,6 @@
 <?php
 
-class rainyforestSocialIcons_Widget extends WP_Widget {
+class educultureSocialIcons_Widget extends WP_Widget {
 
     /**
      * Register widget with WordPress.
@@ -183,8 +183,8 @@ class rainyforestSocialIcons_Widget extends WP_Widget {
 
 } // class Foo_Widget
 
-function rainyforest_social_icons_widget() {
-    register_widget( 'rainyforestSocialIcons_Widget' );
+function educulture_social_icons_widget() {
+    register_widget( 'educultureSocialIcons_Widget' );
 }
 
-add_action( 'widgets_init', 'rainyforest_social_icons_widget' );
+add_action( 'widgets_init', 'educulture_social_icons_widget' );
