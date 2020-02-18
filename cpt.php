@@ -73,7 +73,7 @@ function educulture_register_my_cpts_section() {
 		"supports" => [ "title", "editor","thumbnail"],
 	];
 
-	register_post_type( "educulture_testimonials", $args );	
+	register_post_type( "testimonials", $args );	
     
     
    $labels = [
