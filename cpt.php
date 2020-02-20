@@ -6,7 +6,8 @@ function educulture_register_my_cpts_section() {
 	$labels = [
 		"name" => __( "Sliders", "educulture" ),
 		"singular_name" => __( "Slider", "educulture" ),
-        
+        	"add_new" => __( "Add slider", "educulture" ),
+		"set_featured_image" => __( "Add slider Image", "educulture" ),
 	];
 
 	$args = [
@@ -269,7 +270,7 @@ function educulture_register_my_cpts_section() {
 		$labels = [
 		"name" => __( "Video", "educulture" ),
 		"singular_name" => __( "Video", "educulture" ),
-		"add_new"=>__( "Add Video Item", "educulture" ),
+		"add_new"=>__( "Add Video", "educulture" ),
 		
         
 	];
