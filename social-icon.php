@@ -51,14 +51,15 @@ class educultureSocialIcons_Widget extends WP_Widget {
 
         echo wp_kses_post($before_widget);
         ?>
-        <ul class="<?php echo esc_attr($instance['classname']); ?> social-icon-custom-css">
-            <?php
+ <?php
             if ( $title ) {
                 echo "<div class=\"widget-title\">";
                 echo wp_kses_post($before_title) . esc_html( $title ) . wp_kses_post($after_title);
                 echo "</div>";
             }
             ?>
+        <ul class="<?php echo esc_attr($instance['classname']); ?> social-icon-custom-css">
+           
                 <?php
                 foreach ( $social_icons as $sci ) {
                     $url = trim( $instance[ $sci ] );
